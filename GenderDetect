@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main() {
+    char *in; 
+    printf("Enter a name: ");
+    scanf("%ms", &in); // 
+     char endChar = in[strlen(in) - 1];
+    if (endChar == 'a' || endChar == 'i') 
+        printf("Female\n");
+    else 
+        printf("Male\n");
+      free(in);
+    return 0;
+}
